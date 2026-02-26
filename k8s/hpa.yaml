@@ -1,3 +1,4 @@
+#This auto-scales the Deployment based on CPU utilization (target 50%). Min 1 Pod, max 10. Requires metrics server enabled in your cluster.
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
