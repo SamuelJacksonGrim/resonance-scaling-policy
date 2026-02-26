@@ -1,0 +1,13 @@
+#Exposes the app externally via LoadBalancer (use NodePort or Ingress in prod for better control)
+apiVersion: v1
+kind: Service
+metadata:
+  name: rsp-orchestrator-service
+spec:
+  type: LoadBalancer  # Or ClusterIP/NodePort for internal/external
+  ports:
+  - port: 80
+    targetPort: 8000
+    protocol: TCP
+  selector:
+    app: rsp
