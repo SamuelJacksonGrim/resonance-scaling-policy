@@ -44,9 +44,11 @@ resonance-scaling-policy/
 │   ├── sentinel_protocol.py             # Input Integrity
 │   └── void_repairer.py                 # Jennifer 99.9% engine
 ├── prometheus/
-│   ├── nexus_stub.py
-│   └── chimera_fusion.py
-            # Input integrity
+│   ├── chimera_fusion.py                # Deconstruction, Mapping, Integration, Harmonization
+│   ├── icarus_deception_dissection.py   # Protocol for fallacy dissection
+│   ├── nexus_stub.py                    # Nexus artifact integration stub
+│   ├── par_self_correction.py           # class for self-correction mechanism
+│   └── prometheus_protocol.py           # Protocol implementation
 ├── tests/
 │   ├── governor_high_load_test.py
 │   └── resonance_test_on_anthropic_rsp.py
