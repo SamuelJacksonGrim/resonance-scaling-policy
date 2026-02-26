@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rsp-orchestrator
+  labels:
+    app: rsp
+spec:
+  replicas: 3  # Initial scale; adjust manually with `kubectl scale`
+  selector:
+    matchLabels:
+      app: rsp
+  template:
+    metadata:
+      labels:
+        app: rsp
+    spec:
+      containers:
+      - name: orchestrator
+        image: your-docker-repo/rsp-v1:latest  # Replace with your image (built from Dockerfile)
+        ports:
+        - containerPort: 8000
+        resources:
+          requests:
+            cpu: "250m"  # 0.25 CPU core
+            memory: "512Mi"
+          limits:
+            cpu: "500m"
+            memory: "1Gi"
+        livenessProbe:
+          httpGet:
+            path: /status
+            port: 8000
+          initialDelaySeconds: 10
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /status
+            port: 8000
+          initialDelaySeconds: 5
+          periodSeconds: 5
