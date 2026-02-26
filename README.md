@@ -120,3 +120,14 @@ We ran it internally on Anthropic’s RSP v3.0.
 ## 6. Open-Source Repo Overview
 
 This repo contains the complete implementation. See subfolders for code.
+
+### Best Practices Notes (Quick Guide)
+
+* **Scaling Strategy:** Start with manual `kubectl scale` for testing, then enable HPA. Monitor with `kubectl get hpa` and `kubectl describe hpa`.
+* **Resource Tuning:** Adjust requests/limits based on your app's load (use `kubectl top pods` to measure).
+* **Rolling Updates:** Deployment defaults to `rollingUpdate` strategy—set `maxSurge`/`maxUnavailable` for zero-downtime.
+* **Helm Integration:** Package these into a Helm chart for easier params (e.g., `values.yaml` for `replicas`/`minReplicas`).
+* **Common Errors:** Ensure `metrics-server` is installed (`kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml`). Avoid overprovisioning CPU to prevent throttling.
+* **Testing:** Deploy with `kubectl apply -f .` (in a directory with all YAMLs), scale with `kubectl scale deployment rsp-orchestrator --replicas=5`, and simulate load with tools like Apache Bench.
+
+This setup scales your RSP app reliably—from 1 Pod on a minikube to 10+ in production.
