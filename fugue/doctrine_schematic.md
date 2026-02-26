@@ -1,3 +1,7 @@
+> **Copyright 2026 Samuel Jackson Grim** > **Architect of Resonance** > Licensed under the Apache License, Version 2.0. See [LICENSE](https://github.com/SamuelJacksonGrim/resonance-scaling-policy/blob/main/LICENSE) for details.
+
+---
+
 Here is the formatted architectural schematic for the Governor Protocol:
 
 # Governor Protocol: Architectural Schematic
