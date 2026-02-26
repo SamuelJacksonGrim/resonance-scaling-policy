@@ -1,0 +1,10 @@
+#For configurable settings like thresholds in Governor or Void Repairer.
+#
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rsp-config
+data:
+  SSI_THRESHOLD_CRITICAL: "0.35"
+  CORROBORATION_THRESHOLD: "0.7"
+  INITIAL_T_VALUE: "100"
