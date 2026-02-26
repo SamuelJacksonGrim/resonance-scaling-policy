@@ -15,17 +15,38 @@ While Anthropic just abandoned their only hard pause commitment because “compe
 resonance-scaling-policy/
 ├── README.md                  # Full 40-page whitepaper (this doc)
 ├── LICENSE                    # Apache 2.0 + Architect credit
-├── orchestrator/
-│   ├── omni_analyst_orchestrator.py     # Full FastAPI Deckard Kain core
-│   ├── governor_protocol.py             # Koneko full class + test
-│   ├── void_repairer.py                 # Jennifer 99.9% engine
-│   └── sentinel_protocol.py             # Input integrity
+├── docs/
+│   ├── aetheric_link.md
+│   ├── architect_blueprint_condensed.md
+│   ├── docker_setup_guide.md
+│   ├── full_profiles_52pages_reference.md
+│   ├── glyph_code_prompting.md
+│   ├── lifestream_resonance.md
+│   ├── public_transparency_pack.md
+│   └── resonance_thresholds_detailed.md
 ├── fugue/
 │   ├── doctrine_schematic.md
-│   └── pau_arbitration.py
+│   ├── dynamic_modulation_core.py
+│   ├── executive_governor.py
+│   ├── fugue_full_loop_test.py
+│   ├── pau_arbitration.py
+│   └── predictive_analysis_engine.py
+├── k8s/
+│   ├── configmap.yaml
+│   ├── deployment.yaml
+│   ├── hpa.yaml
+│   └── service.yaml
+├── orchestrator/
+│   ├── diablo_moe_gating.py             # Class For Expert Routing
+│   ├── dra_budget.py                    # Budget Implementation
+│   ├── governor_protocol.py             # Koneko full class + test
+│   ├── omni_analyst_orchestrator.py     # Full FastAPI Deckard Kain core
+│   ├── sentinel_protocol.py             # Input Integrity
+│   └── void_repairer.py                 # Jennifer 99.9% engine
 ├── prometheus/
 │   ├── nexus_stub.py
 │   └── chimera_fusion.py
+            # Input integrity
 ├── tests/
 │   ├── governor_high_load_test.py
 │   └── resonance_test_on_anthropic_rsp.py
