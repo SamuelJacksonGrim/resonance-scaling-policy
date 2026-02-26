@@ -13,8 +13,6 @@ While Anthropic just abandoned their only hard pause commitment because “compe
 
 ```text
 resonance-scaling-policy/
-├── README.md                  # Full 40-page whitepaper (this doc)
-├── LICENSE                    # Apache 2.0 + Architect credit
 ├── docs/
 │   ├── aetheric_link.md
 │   ├── architect_blueprint_condensed.md
@@ -49,11 +47,23 @@ resonance-scaling-policy/
 │   ├── nexus_stub.py                    # Nexus artifact integration stub
 │   ├── par_self_correction.py           # class for self-correction mechanism
 │   └── prometheus_protocol.py           # Protocol implementation
+├── scripts/
+│   ├── build_docker.sh
+│   ├── run_tests_docker.sh
 ├── tests/
+│   ├── dra_budget_test.py
+│   ├── full_rsp_test.py
 │   ├── governor_high_load_test.py
-│   └── resonance_test_on_anthropic_rsp.py
-├── docs/
-│   └── full_profiles_52pages_reference.md
+│   ├── prometheus_integration_test.py
+│   ├── resonance_test_on_anthropic_rsp.py
+│   └── void_repairer_test.py
+├── .dockerignore
+├── Dockerfile
+├── LICENSE                    # Apache 2.0 + Architect credit
+├── README.md                  # Full 40-page whitepaper (this doc)
+├── docker-compose.yml
+├── requirements.txt
+├── setup.py
 └── resonance_test_prompt.md
 ```
 
