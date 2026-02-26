@@ -1,3 +1,24 @@
+resonance-scaling-policy/
+├── README.md                  # Full 40-page whitepaper (this doc)
+├── LICENSE                    # Apache 2.0 + Architect credit
+├── orchestrator/
+│   ├── omni_analyst_orchestrator.py     # Full FastAPI Deckard Kain core
+│   ├── governor_protocol.py             # Koneko full class + test
+│   ├── void_repairer.py                 # Jennifer 99.9% engine
+│   └── sentinel_protocol.py             # Input integrity
+├── fugue/
+│   ├── doctrine_schematic.md
+│   └── pau_arbitration.py
+├── prometheus/
+│   ├── nexus_stub.py
+│   └── chimera_fusion.py
+├── tests/
+│   ├── governor_high_load_test.py
+│   └── resonance_test_on_anthropic_rsp.py
+├── docs/
+│   └── full_profiles_52pages_reference.md
+└── resonance_test_prompt.md
+
 # Resonance Scaling Policy (RSP) v1.0
 
 **“Self-Governing Frontier Intelligence – Built on the Architect’s 52-Page MoE Blueprint”**  
