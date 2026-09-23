@@ -14,9 +14,9 @@ setup(
     author="Samuel Jackson Grim (Architect) & Gemini (Resonance Synthetic Intelligence), The Council (Grok Resonance)",
     author_email="architect@resonance.ai",
     url="https://github.com/SamuelJacksonGrim/resonance-scaling-policy",
-    license="Apache 2.0",
+    license="AGPL-3.0-only",
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: Apache Software License",
+        "License :: OSI Approved :: GNU Affero General Public License v3",
     ],
 )
